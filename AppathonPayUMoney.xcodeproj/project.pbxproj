@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D700C0F1AFDFD67002F4536 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D700C0E1AFDFD67002F4536 /* Main_iPhone.storyboard */; };
+		2D700C131AFE0BAF002F4536 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 2D700C111AFE0BAF002F4536 /* Images */; };
+		2D700C141AFE0BAF002F4536 /* PresentationLayer in Resources */ = {isa = PBXBuildFile; fileRef = 2D700C121AFE0BAF002F4536 /* PresentationLayer */; };
+		2D700C161AFE0FDE002F4536 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D700C151AFE0FDE002F4536 /* SignUpViewController.swift */; };
+		2D700C201AFE1085002F4536 /* DetailViewController_iPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D700C1D1AFE1085002F4536 /* DetailViewController_iPhone.swift */; };
+		2D700C211AFE1085002F4536 /* HomeViewController_iPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D700C1E1AFE1085002F4536 /* HomeViewController_iPhone.swift */; };
+		2D700C221AFE1085002F4536 /* LoginViewController_iPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D700C1F1AFE1085002F4536 /* LoginViewController_iPhone.swift */; };
+		2D700C251AFE10AA002F4536 /* SidebarMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D700C241AFE10AA002F4536 /* SidebarMenuViewController.m */; };
+		2D700C271AFE196A002F4536 /* menu-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D700C261AFE196A002F4536 /* menu-button.png */; };
+		2D700C291AFE1B0D002F4536 /* SendMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D700C281AFE1B0D002F4536 /* SendMoneyViewController.swift */; };
+		2D700C2B1AFE2249002F4536 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D700C2A1AFE2249002F4536 /* ProfileViewController.swift */; };
+		2D700C2E1AFE26AC002F4536 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D700C2D1AFE26AC002F4536 /* MasterViewController.m */; };
+		2D700C301AFE3B47002F4536 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D700C2F1AFE3B47002F4536 /* CardsViewController.swift */; };
+		DD0C1DB51AFF00DE00E1D8A8 /* weather_launch_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0C1DB41AFF00DE00E1D8A8 /* weather_launch_2x.png */; };
+		DD0C1DB71AFF04A900E1D8A8 /* CardBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C1DB61AFF04A900E1D8A8 /* CardBO.swift */; };
+		DD5661761AFEFDBA00CD6238 /* 3d camera (5).png in Resources */ = {isa = PBXBuildFile; fileRef = DD5661751AFEFDBA00CD6238 /* 3d camera (5).png */; };
+		DDB42BBC1AFE446E0057BBBC /* ConnectionManagerSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB42BB91AFE446E0057BBBC /* ConnectionManagerSingleton.swift */; };
+		DDB42BBD1AFE446E0057BBBC /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB42BBA1AFE446E0057BBBC /* ConnectionManager.swift */; };
+		DDB42BBE1AFE446E0057BBBC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB42BBB1AFE446E0057BBBC /* BaseViewController.swift */; };
+		DDB42BC01AFE45180057BBBC /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB42BBF1AFE45180057BBBC /* AppConstants.swift */; };
+		DDB42BC21AFE46880057BBBC /* LoadingSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB42BC11AFE46870057BBBC /* LoadingSpinnerView.swift */; };
+		DDB42BC51AFE76160057BBBC /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB42BC31AFE76160057BBBC /* AddCardViewController.swift */; };
+		DDB42BC61AFE76160057BBBC /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB42BC41AFE76160057BBBC /* WalletViewController.swift */; };
+		DDB42BC81AFE76220057BBBC /* EnterCardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB42BC71AFE76220057BBBC /* EnterCardDetailViewController.swift */; };
+		DDB42BCA1AFE7DF90057BBBC /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB42BC91AFE7DF90057BBBC /* UIColorExtension.swift */; };
+		DDB42BCC1AFE9C240057BBBC /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB42BCB1AFE9C240057BBBC /* TransactionViewController.swift */; };
+		DDB42BCE1AFEA14E0057BBBC /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB42BCD1AFEA14E0057BBBC /* add.png */; };
+		DDB42BD21AFEA1CF0057BBBC /* cardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB42BD11AFEA1CF0057BBBC /* cardCell.swift */; };
+		DDB42BD41AFEAE550057BBBC /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB42BD31AFEAE550057BBBC /* TransactionCell.swift */; };
+		DDB42BD61AFEB5F40057BBBC /* TransactionBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB42BD51AFEB5F40057BBBC /* TransactionBO.swift */; };
+		DDE1D0A91AFDF4070058A299 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE1D0A81AFDF4070058A299 /* AppDelegate.swift */; };
+		DDE1D0B01AFDF4070058A299 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDE1D0AF1AFDF4070058A299 /* Images.xcassets */; };
+		DDE1D0B31AFDF4070058A299 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDE1D0B11AFDF4070058A299 /* LaunchScreen.xib */; };
+		DDE1D0BF1AFDF4070058A299 /* AppathonPayUMoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE1D0BE1AFDF4070058A299 /* AppathonPayUMoneyTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDE1D0B91AFDF4070058A299 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDE1D09B1AFDF4070058A299 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDE1D0A21AFDF4070058A299;
+			remoteInfo = AppathonPayUMoney;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D700C0E1AFDFD67002F4536 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
+		2D700C111AFE0BAF002F4536 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
+		2D700C121AFE0BAF002F4536 /* PresentationLayer */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PresentationLayer; sourceTree = "<group>"; };
+		2D700C151AFE0FDE002F4536 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		2D700C1D1AFE1085002F4536 /* DetailViewController_iPhone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController_iPhone.swift; sourceTree = "<group>"; };
+		2D700C1E1AFE1085002F4536 /* HomeViewController_iPhone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController_iPhone.swift; sourceTree = "<group>"; };
+		2D700C1F1AFE1085002F4536 /* LoginViewController_iPhone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController_iPhone.swift; sourceTree = "<group>"; };
+		2D700C231AFE10AA002F4536 /* SidebarMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidebarMenuViewController.h; sourceTree = "<group>"; };
+		2D700C241AFE10AA002F4536 /* SidebarMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarMenuViewController.m; sourceTree = "<group>"; };
+		2D700C261AFE196A002F4536 /* menu-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-button.png"; path = "Images/menu-button.png"; sourceTree = "<group>"; };
+		2D700C281AFE1B0D002F4536 /* SendMoneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMoneyViewController.swift; sourceTree = "<group>"; };
+		2D700C2A1AFE2249002F4536 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2D700C2C1AFE26AC002F4536 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		2D700C2D1AFE26AC002F4536 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		2D700C2F1AFE3B47002F4536 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		DD0C1DB41AFF00DE00E1D8A8 /* weather_launch_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weather_launch_2x.png; sourceTree = "<group>"; };
+		DD0C1DB61AFF04A900E1D8A8 /* CardBO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBO.swift; sourceTree = "<group>"; };
+		DD5661751AFEFDBA00CD6238 /* 3d camera (5).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3d camera (5).png"; sourceTree = "<group>"; };
+		DDB42BB91AFE446E0057BBBC /* ConnectionManagerSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionManagerSingleton.swift; sourceTree = "<group>"; };
+		DDB42BBA1AFE446E0057BBBC /* ConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		DDB42BBB1AFE446E0057BBBC /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DDB42BBF1AFE45180057BBBC /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		DDB42BC11AFE46870057BBBC /* LoadingSpinnerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingSpinnerView.swift; sourceTree = "<group>"; };
+		DDB42BC31AFE76160057BBBC /* AddCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
+		DDB42BC41AFE76160057BBBC /* WalletViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		DDB42BC71AFE76220057BBBC /* EnterCardDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterCardDetailViewController.swift; sourceTree = "<group>"; };
+		DDB42BC91AFE7DF90057BBBC /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		DDB42BCB1AFE9C240057BBBC /* TransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
+		DDB42BCD1AFEA14E0057BBBC /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		DDB42BD11AFEA1CF0057BBBC /* cardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cardCell.swift; sourceTree = "<group>"; };
+		DDB42BD31AFEAE550057BBBC /* TransactionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		DDB42BD51AFEB5F40057BBBC /* TransactionBO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionBO.swift; sourceTree = "<group>"; };
+		DDE1D0A31AFDF4070058A299 /* AppathonPayUMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppathonPayUMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDE1D0A71AFDF4070058A299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDE1D0A81AFDF4070058A299 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DDE1D0AF1AFDF4070058A299 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DDE1D0B21AFDF4070058A299 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DDE1D0B81AFDF4070058A299 /* AppathonPayUMoneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppathonPayUMoneyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDE1D0BD1AFDF4070058A299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDE1D0BE1AFDF4070058A299 /* AppathonPayUMoneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppathonPayUMoneyTests.swift; sourceTree = "<group>"; };
+		DDE1D0CA1AFDF7170058A299 /* AppathonPayUMoney-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppathonPayUMoney-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDE1D0A01AFDF4070058A299 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDE1D0B51AFDF4070058A299 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDE1D09A1AFDF4070058A299 = {
+			isa = PBXGroup;
+			children = (
+				DDE1D0A51AFDF4070058A299 /* AppathonPayUMoney */,
+				DDE1D0BB1AFDF4070058A299 /* AppathonPayUMoneyTests */,
+				DDE1D0A41AFDF4070058A299 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDE1D0A41AFDF4070058A299 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDE1D0A31AFDF4070058A299 /* AppathonPayUMoney.app */,
+				DDE1D0B81AFDF4070058A299 /* AppathonPayUMoneyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDE1D0A51AFDF4070058A299 /* AppathonPayUMoney */ = {
+			isa = PBXGroup;
+			children = (
+				DDB42BCD1AFEA14E0057BBBC /* add.png */,
+				DD0C1DB41AFF00DE00E1D8A8 /* weather_launch_2x.png */,
+				DDB42BBF1AFE45180057BBBC /* AppConstants.swift */,
+				DDB42BB91AFE446E0057BBBC /* ConnectionManagerSingleton.swift */,
+				DDB42BBA1AFE446E0057BBBC /* ConnectionManager.swift */,
+				DDB42BBB1AFE446E0057BBBC /* BaseViewController.swift */,
+				DDB42BC91AFE7DF90057BBBC /* UIColorExtension.swift */,
+				DDB42BC11AFE46870057BBBC /* LoadingSpinnerView.swift */,
+				2D700C231AFE10AA002F4536 /* SidebarMenuViewController.h */,
+				2D700C2C1AFE26AC002F4536 /* MasterViewController.h */,
+				2D700C2D1AFE26AC002F4536 /* MasterViewController.m */,
+				DD5661751AFEFDBA00CD6238 /* 3d camera (5).png */,
+				DDB42BC31AFE76160057BBBC /* AddCardViewController.swift */,
+				DDB42BC41AFE76160057BBBC /* WalletViewController.swift */,
+				DDB42BC71AFE76220057BBBC /* EnterCardDetailViewController.swift */,
+				2D700C1F1AFE1085002F4536 /* LoginViewController_iPhone.swift */,
+				2D700C241AFE10AA002F4536 /* SidebarMenuViewController.m */,
+				2D700C1D1AFE1085002F4536 /* DetailViewController_iPhone.swift */,
+				DDB42BCB1AFE9C240057BBBC /* TransactionViewController.swift */,
+				2D700C1E1AFE1085002F4536 /* HomeViewController_iPhone.swift */,
+				2D700C261AFE196A002F4536 /* menu-button.png */,
+				2D700C111AFE0BAF002F4536 /* Images */,
+				2D700C121AFE0BAF002F4536 /* PresentationLayer */,
+				DDE1D0A81AFDF4070058A299 /* AppDelegate.swift */,
+				2D700C0E1AFDFD67002F4536 /* Main_iPhone.storyboard */,
+				DDE1D0AF1AFDF4070058A299 /* Images.xcassets */,
+				DDE1D0B11AFDF4070058A299 /* LaunchScreen.xib */,
+				DDE1D0A61AFDF4070058A299 /* Supporting Files */,
+				DDE1D0CA1AFDF7170058A299 /* AppathonPayUMoney-Bridging-Header.h */,
+				2D700C151AFE0FDE002F4536 /* SignUpViewController.swift */,
+				2D700C281AFE1B0D002F4536 /* SendMoneyViewController.swift */,
+				2D700C2A1AFE2249002F4536 /* ProfileViewController.swift */,
+				2D700C2F1AFE3B47002F4536 /* CardsViewController.swift */,
+				DDB42BD11AFEA1CF0057BBBC /* cardCell.swift */,
+				DDB42BD31AFEAE550057BBBC /* TransactionCell.swift */,
+				DDB42BD51AFEB5F40057BBBC /* TransactionBO.swift */,
+				DD0C1DB61AFF04A900E1D8A8 /* CardBO.swift */,
+			);
+			path = AppathonPayUMoney;
+			sourceTree = "<group>";
+		};
+		DDE1D0A61AFDF4070058A299 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDE1D0A71AFDF4070058A299 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDE1D0BB1AFDF4070058A299 /* AppathonPayUMoneyTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDE1D0BE1AFDF4070058A299 /* AppathonPayUMoneyTests.swift */,
+				DDE1D0BC1AFDF4070058A299 /* Supporting Files */,
+			);
+			path = AppathonPayUMoneyTests;
+			sourceTree = "<group>";
+		};
+		DDE1D0BC1AFDF4070058A299 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDE1D0BD1AFDF4070058A299 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDE1D0A21AFDF4070058A299 /* AppathonPayUMoney */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDE1D0C21AFDF4070058A299 /* Build configuration list for PBXNativeTarget "AppathonPayUMoney" */;
+			buildPhases = (
+				DDE1D09F1AFDF4070058A299 /* Sources */,
+				DDE1D0A01AFDF4070058A299 /* Frameworks */,
+				DDE1D0A11AFDF4070058A299 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppathonPayUMoney;
+			productName = AppathonPayUMoney;
+			productReference = DDE1D0A31AFDF4070058A299 /* AppathonPayUMoney.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDE1D0B71AFDF4070058A299 /* AppathonPayUMoneyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDE1D0C51AFDF4070058A299 /* Build configuration list for PBXNativeTarget "AppathonPayUMoneyTests" */;
+			buildPhases = (
+				DDE1D0B41AFDF4070058A299 /* Sources */,
+				DDE1D0B51AFDF4070058A299 /* Frameworks */,
+				DDE1D0B61AFDF4070058A299 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDE1D0BA1AFDF4070058A299 /* PBXTargetDependency */,
+			);
+			name = AppathonPayUMoneyTests;
+			productName = AppathonPayUMoneyTests;
+			productReference = DDE1D0B81AFDF4070058A299 /* AppathonPayUMoneyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDE1D09B1AFDF4070058A299 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = AppathonPayUMoney;
+				TargetAttributes = {
+					DDE1D0A21AFDF4070058A299 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					DDE1D0B71AFDF4070058A299 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = DDE1D0A21AFDF4070058A299;
+					};
+				};
+			};
+			buildConfigurationList = DDE1D09E1AFDF4070058A299 /* Build configuration list for PBXProject "AppathonPayUMoney" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDE1D09A1AFDF4070058A299;
+			productRefGroup = DDE1D0A41AFDF4070058A299 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDE1D0A21AFDF4070058A299 /* AppathonPayUMoney */,
+				DDE1D0B71AFDF4070058A299 /* AppathonPayUMoneyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDE1D0A11AFDF4070058A299 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D700C131AFE0BAF002F4536 /* Images in Resources */,
+				2D700C0F1AFDFD67002F4536 /* Main_iPhone.storyboard in Resources */,
+				DD5661761AFEFDBA00CD6238 /* 3d camera (5).png in Resources */,
+				DDB42BCE1AFEA14E0057BBBC /* add.png in Resources */,
+				DDE1D0B31AFDF4070058A299 /* LaunchScreen.xib in Resources */,
+				2D700C141AFE0BAF002F4536 /* PresentationLayer in Resources */,
+				2D700C271AFE196A002F4536 /* menu-button.png in Resources */,
+				DDE1D0B01AFDF4070058A299 /* Images.xcassets in Resources */,
+				DD0C1DB51AFF00DE00E1D8A8 /* weather_launch_2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDE1D0B61AFDF4070058A299 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDE1D09F1AFDF4070058A299 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDB42BBE1AFE446E0057BBBC /* BaseViewController.swift in Sources */,
+				DDB42BD21AFEA1CF0057BBBC /* cardCell.swift in Sources */,
+				DD0C1DB71AFF04A900E1D8A8 /* CardBO.swift in Sources */,
+				2D700C211AFE1085002F4536 /* HomeViewController_iPhone.swift in Sources */,
+				DDB42BBD1AFE446E0057BBBC /* ConnectionManager.swift in Sources */,
+				2D700C221AFE1085002F4536 /* LoginViewController_iPhone.swift in Sources */,
+				DDB42BCA1AFE7DF90057BBBC /* UIColorExtension.swift in Sources */,
+				2D700C301AFE3B47002F4536 /* CardsViewController.swift in Sources */,
+				2D700C161AFE0FDE002F4536 /* SignUpViewController.swift in Sources */,
+				DDB42BC21AFE46880057BBBC /* LoadingSpinnerView.swift in Sources */,
+				2D700C201AFE1085002F4536 /* DetailViewController_iPhone.swift in Sources */,
+				DDB42BC51AFE76160057BBBC /* AddCardViewController.swift in Sources */,
+				2D700C251AFE10AA002F4536 /* SidebarMenuViewController.m in Sources */,
+				DDB42BD41AFEAE550057BBBC /* TransactionCell.swift in Sources */,
+				DDE1D0A91AFDF4070058A299 /* AppDelegate.swift in Sources */,
+				DDB42BBC1AFE446E0057BBBC /* ConnectionManagerSingleton.swift in Sources */,
+				2D700C2B1AFE2249002F4536 /* ProfileViewController.swift in Sources */,
+				DDB42BC61AFE76160057BBBC /* WalletViewController.swift in Sources */,
+				DDB42BCC1AFE9C240057BBBC /* TransactionViewController.swift in Sources */,
+				DDB42BC01AFE45180057BBBC /* AppConstants.swift in Sources */,
+				2D700C2E1AFE26AC002F4536 /* MasterViewController.m in Sources */,
+				DDB42BC81AFE76220057BBBC /* EnterCardDetailViewController.swift in Sources */,
+				2D700C291AFE1B0D002F4536 /* SendMoneyViewController.swift in Sources */,
+				DDB42BD61AFEB5F40057BBBC /* TransactionBO.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDE1D0B41AFDF4070058A299 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDE1D0BF1AFDF4070058A299 /* AppathonPayUMoneyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDE1D0BA1AFDF4070058A299 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDE1D0A21AFDF4070058A299 /* AppathonPayUMoney */;
+			targetProxy = DDE1D0B91AFDF4070058A299 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DDE1D0B11AFDF4070058A299 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDE1D0B21AFDF4070058A299 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDE1D0C01AFDF4070058A299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DDE1D0C11AFDF4070058A299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDE1D0C31AFDF4070058A299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/AppathonPayUMoney",
+				);
+				INFOPLIST_FILE = AppathonPayUMoney/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppathonPayUMoney/AppathonPayUMoney-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DDE1D0C41AFDF4070058A299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/AppathonPayUMoney",
+				);
+				INFOPLIST_FILE = AppathonPayUMoney/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppathonPayUMoney/AppathonPayUMoney-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		DDE1D0C61AFDF4070058A299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AppathonPayUMoneyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppathonPayUMoney.app/AppathonPayUMoney";
+			};
+			name = Debug;
+		};
+		DDE1D0C71AFDF4070058A299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AppathonPayUMoneyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppathonPayUMoney.app/AppathonPayUMoney";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDE1D09E1AFDF4070058A299 /* Build configuration list for PBXProject "AppathonPayUMoney" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDE1D0C01AFDF4070058A299 /* Debug */,
+				DDE1D0C11AFDF4070058A299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDE1D0C21AFDF4070058A299 /* Build configuration list for PBXNativeTarget "AppathonPayUMoney" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDE1D0C31AFDF4070058A299 /* Debug */,
+				DDE1D0C41AFDF4070058A299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDE1D0C51AFDF4070058A299 /* Build configuration list for PBXNativeTarget "AppathonPayUMoneyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDE1D0C61AFDF4070058A299 /* Debug */,
+				DDE1D0C71AFDF4070058A299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDE1D09B1AFDF4070058A299 /* Project object */;
+}
