@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2D700C0F1AFDFD67002F4536 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D700C0E1AFDFD67002F4536 /* Main_iPhone.storyboard */; };
 		2D700C131AFE0BAF002F4536 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 2D700C111AFE0BAF002F4536 /* Images */; };
-		2D700C141AFE0BAF002F4536 /* PresentationLayer in Resources */ = {isa = PBXBuildFile; fileRef = 2D700C121AFE0BAF002F4536 /* PresentationLayer */; };
 		2D700C161AFE0FDE002F4536 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D700C151AFE0FDE002F4536 /* SignUpViewController.swift */; };
 		2D700C201AFE1085002F4536 /* DetailViewController_iPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D700C1D1AFE1085002F4536 /* DetailViewController_iPhone.swift */; };
 		2D700C211AFE1085002F4536 /* HomeViewController_iPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D700C1E1AFE1085002F4536 /* HomeViewController_iPhone.swift */; };
@@ -56,7 +55,6 @@
 /* Begin PBXFileReference section */
 		2D700C0E1AFDFD67002F4536 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
 		2D700C111AFE0BAF002F4536 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
-		2D700C121AFE0BAF002F4536 /* PresentationLayer */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PresentationLayer; sourceTree = "<group>"; };
 		2D700C151AFE0FDE002F4536 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		2D700C1D1AFE1085002F4536 /* DetailViewController_iPhone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController_iPhone.swift; sourceTree = "<group>"; };
 		2D700C1E1AFE1085002F4536 /* HomeViewController_iPhone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController_iPhone.swift; sourceTree = "<group>"; };
@@ -158,7 +156,6 @@
 				2D700C1E1AFE1085002F4536 /* HomeViewController_iPhone.swift */,
 				2D700C261AFE196A002F4536 /* menu-button.png */,
 				2D700C111AFE0BAF002F4536 /* Images */,
-				2D700C121AFE0BAF002F4536 /* PresentationLayer */,
 				DDE1D0A81AFDF4070058A299 /* AppDelegate.swift */,
 				2D700C0E1AFDFD67002F4536 /* Main_iPhone.storyboard */,
 				DDE1D0AF1AFDF4070058A299 /* Images.xcassets */,
@@ -287,7 +284,6 @@
 				DD5661761AFEFDBA00CD6238 /* 3d camera (5).png in Resources */,
 				DDB42BCE1AFEA14E0057BBBC /* add.png in Resources */,
 				DDE1D0B31AFDF4070058A299 /* LaunchScreen.xib in Resources */,
-				2D700C141AFE0BAF002F4536 /* PresentationLayer in Resources */,
 				2D700C271AFE196A002F4536 /* menu-button.png in Resources */,
 				DDE1D0B01AFDF4070058A299 /* Images.xcassets in Resources */,
 				DD0C1DB51AFF00DE00E1D8A8 /* weather_launch_2x.png in Resources */,

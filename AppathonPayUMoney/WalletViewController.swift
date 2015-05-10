@@ -62,7 +62,8 @@ class WalletViewController: BaseViewController, ConnectionManagerDelegate {
                 var dicvar = NSDictionary()
                 dicvar = json.objectAtIndex(0) as NSDictionary
                 println(dicvar)
-                self.lblWalletAmount.text = dicvar.objectForKey("balance") as NSString
+                var amount = dicvar.objectForKey("balance") as NSInteger
+                self.lblWalletAmount.text = String(amount)
                 
             }
             
