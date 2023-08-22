@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://pp72.payumoney.com/bolt-demo/fast/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/hmac-sha512.js"></script>
+  		<script id="bolt" src="https://pp75admin.payu.in/bolt/bolt.min.js" bolt-color="af636b" bolt-logo="http://boltiswatching.com/wp-content/uploads/2015/09/Bolt-Logo-e14421724859591.png"></script>
+        <base href=".">
+	</head>
+	<body class="bg" onload="hash()">
+        <div style="background-image: url(&#39;https://www.payumoney.comhttps://ppfile72.payumoney.com/images/front/texture.png&#39;);">
+            <form class="pure-form pure-form-stacked" style="width: 95%;margin: 0 auto;min-height: 100vh;">
+				<legend class="colorTxt one-edge-shadow header"></legend>
+                <fieldset class="fieldset">
+                    <legend class="colorTxt cap">Mandatory</legend>
+
+                    <label class="colorTxt" for="email">Email</label>
+                    <input id="email" type="email" placeholder="Email" value="test@example.com">
+                    <br>
+
+                    <label class="colorTxt" for="phone">Mobile</label>
+                    <input id="phone" type="number" placeholder="Mobile" value="1234567890">
+                    <br>
+
+                    <label class="colorTxt" for="amount">Amount</label>
+                    <input id="amount" type="text" placeholder="Mobile" value="15000">
+                    <br>
+                    <label class="colorTxt" for="key">Key</label>
+                    <input id="key" type="text" placeholder="Key" value="KOEfPI">
+                    <br>
+
+                    <label class="colorTxt" for="salt">Salt</label>
+                    <input id="salt" type="text" placeholder="Salt" value="Rfxnm3ET">
+                    <br>
+
+                    <label class="colorTxt" for="txnid">Txn ID</label>
+                    <input id="txnid" type="text" placeholder="Transaction ID" value="4f45351edbc5e707da47">
+                    <br>
+
+                    <label class="colorTxt" for="hash">Hash</label>
+                    <input id="hash" type="text" placeholder="Hash" value="">
+                    <br>
+
+                    <label class="colorTxt" for="firstname">First Name</label>
+                    <input id="firstname" type="text" placeholder="First Name" value="Payu-Admin">
+                    <br>
+
+                    <label class="colorTxt" for="productinfo">Product Info</label>
+                    <input id="productinfo" type="text" placeholder="Product Info" value="Product Info">
+                    <br>
+
+                    <label class="colorTxt" for="surl">S URL</label>
+                    <input id="surl" type="text" placeholder="S URL" value="https://pp75admin.payu.in/test_response">
+                    <br>
+
+                    <label class="colorTxt" for="surl">F URL</label>
+                    <input id="furl" type="text" placeholder="F URL" value="https://pp75admin.payu.in/test_response">
+                    <br>
+
+                </fieldset>
+                <fieldset class="fieldset">
+                    <legend class="colorTxt cap">Optional</legend>
+
+                    <label class="colorTxt" for="mode">Mode</label>
+                    <input id="mode" type="text" placeholder="Mode" value="DropOut">
+                    <br>
+
+                    <label class="colorTxt" for="modeDisabled">Mode disable</label>
+                    <input id="modeDisabled" type="text" placeholder="Mode disabled" value="false">
+                    <br>
+
+                    <label class="colorTxt" for="lastname">Last Name</label>
+                    <input id="lastname" type="text" placeholder="Last Name" value="">
+                    <br>
+
+                    <label class="colorTxt" for="curl">Cancel URL</label>
+                    <input id="curl" type="text" placeholder="Cancel URL" value="">
+                    <br>
+
+                    <label class="colorTxt" for="address1">Address 1</label>
+                    <input id="address1" type="text" placeholder="Address 1" value="My World">
+                    <br>
+
+                    <label class="colorTxt" for="address2">Address 2</label>
+                    <input id="address2" type="text" placeholder="Address 2" value="Balewadi street">
+                    <br>
+
+                    <label class="colorTxt" for="city">City</label>
+                    <input id="city" type="text" placeholder="City" value="Pune">
+                    <br>
+
+                    <label class="colorTxt" for="state">State</label>
+                    <input id="curl" type="text" placeholder="State" value="Maharashtra">
+                    <br>
+
+                    <label class="colorTxt" for="country">Country</label>
+                    <input id="country" type="text" placeholder="Country" value="India">
+                    <br>
+
+                    <label class="colorTxt" for="zipcode">Zip Code</label>
+                    <input id="zipcode" type="number" placeholder="Zip code" value="411045">
+                    <br>
+
+                    <label class="colorTxt" for="udf1">UDF 1</label>
+                    <input id="udf1" type="text" placeholder="UDF1" value="">
+                    <br>
+
+                    <label class="colorTxt" for="udf2">UDF 2</label>
+                    <input id="udf2" type="text" placeholder="UDF 2" value="">
+                    <br>
+
+                    <label class="colorTxt" for="udf3">UDF 3</label>
+                    <input id="udf3" type="text" placeholder="UDF 3" value="">
+                    <br>
+
+                    <label class="colorTxt" for="udf4">UDF 4</label>
+                    <input id="udf4" type="text" placeholder="UDF 4" value="">
+                    <br>
+
+                    <label class="colorTxt" for="udf5">UDF 5</label>
+                    <input id="udf5" type="text" placeholder="UDF 5" value="">
+                    <br>
+
+                    <label class="colorTxt" for="pg">PG</label>
+                    <input id="pg" type="text" placeholder="PG" value="">
+                    <br>
+
+                    <label class="colorTxt" for="enforcepaymethod">Enforce PM</label>
+                    <input id="enforcepaymethod" type="text" placeholder="Enforce PM" value="">
+                    <br>
+
+                    <label class="colorTxt" for="expirytime">Expiry Time</label>
+                    <input id="expirytime" type="text" placeholder="Expiry Time" value="">
+                    <br>
+                    <label class="colorTxt" for="orderId">Cart Details</label>
+                    <input id="cartDetail" type="text" placeholder="Cart Details" value="">
+                    <br>
+                    <label class="colorTxt" for="orderId">Order ID</label>
+                    <input id="orderId" type="text" placeholder="Order ID" value="34567">
+                    <br>
+                </fieldset>
+                <div class="btnBox">
+                    <button id="pay" type="button" class="pure-button" style="margin: .7em 0 0;padding: .5em 2em;">Launch Icp</button>
+                    <button id="generateV2Hash" type="button" class="pure-button" style="margin: .7em 0 0;margin-left: 20px;padding: .5em 2em;">Launch Express</button>
+                </div>
+            </form>
+        </div>
+  		<script>
+            $(document).ready(function() {
+                var url = window.location.hostname.replace("payumoney.com","");
+                var url = url+"thirdparty.com/testresponse.php";
+                $("#surl,#furl").val(url);
+
+            });
+            var txnID = 'mtx'+ new Date().getTime();//112233
+            function hash(){
+                $("#txnid").prop("value",id);
+                var key = $("#key").val();
+                var txnid = txnID;
+                var amount = $("#amount").val();
+                var firstname = $("#firstname").val();
+                var productinfo = $("#productinfo").val();
+                var email = $("#email").val();
+                var salt = $("#salt").val();
+                var udf1 = $("#udf1").val();
+                var udf2 = $("#udf2").val();
+                var udf3 = $("#udf3").val();
+                var udf4 = $("#udf4").val();
+                var udf5 = $("#udf5").val();
+                var hashString = key+'|'+txnid+'|'+amount+'|'+productinfo+'|'+firstname+'|'+email+'|'+udf1+'|'+udf2+'|'+udf3+'|'+udf4+'|'+udf5+'||||||'+salt;
+                $("#hash").val(CryptoJS.SHA512(hashString).toString(CryptoJS.enc.Hex));
+            };
+            function v2Hash(){
+                console.log("1111");
+                const date = new Date().toGMTString();
+                var key = $("#key").val();
+                var txnid = txnID;
+                var amount = $("#amount").val();
+                var firstname = $("#firstname").val();
+                var lastname = $("#lastname").val();
+                var productinfo = $("#productinfo").val();
+                const hash= $("#hash").val();
+                var email = $("#email").val();
+                var salt = $("#salt").val();
+                var udf1 = $("#udf1").val();
+                var udf2 = $("#udf2").val();
+                var udf3 = $("#udf3").val();
+                var udf4 = $("#udf4").val();
+                var udf5 = $("#udf5").val();
+                var isCheckoutExpress = true;
+                const icp_source = "express";
+                var productinfo = "EXPRESS";
+                const surl = $("#surl").val();
+                const furl = $("#furl").val();
+                const orderId = $("#orderId").val();
+                // const cart_details = $("#cartDetail").val();
+                const cart_details = {
+                                        "amount": "15000",
+                                        "items": 2,
+                                        "sku_details": [
+                                            {
+                                            "offer_key": [
+                                                "skuinstantoffer@32EpmJafGG9l"
+                                            ],
+                                            "amount_per_sku": "5000",
+                                            "quantity": "1",
+                                            "sku_id": "Apple69J",
+                                            "sku_name": "Iphone19X",
+                                            "logo": "https://www.jhajistore.com/cdn/shop/products/DSC0064_720x.jpg?v=1657574131"
+                                            },
+                                            {
+                                            "offer_key": [
+                                                "skuinstantoffer@32EpmJafGG9l"
+                                            ],
+                                            "amount_per_sku": "10000",
+                                            "quantity": "1",
+                                            "sku_id": "Boat123",
+                                            "sku_name": "Boathandfree",
+                                            "logo": "https://www.jhajistore.com/cdn/shop/products/DSC0064_720x.jpg?v=1657574131"
+                                            }
+                                        ]
+                                    };                 
+                const expressData = {
+                    key: key,
+                    hash:hash,
+                    txnid: txnid,
+                    amount: amount,
+                    firstname: firstname,
+                    lastname: lastname,
+                    email: email,
+                    salt: salt,
+                    udf1:udf1,
+                    udf2:udf2,
+                    udf3:udf3,
+                    udf4:udf4,
+                    udf5:udf5,
+                    isCheckoutExpress:true,
+                    icp_source: "express",
+                    productinfo: "EXPRESS",
+                    surl: surl,
+                    furl: furl,
+                    orderid: orderId,
+                    cart_details: cart_details
+                }    
+                const AUTH_TYPE = 'sha512';                
+                const data = JSON.stringify(expressData);
+                console.log("data inside express", data);
+	            const hash_string = data + '|' + date + '|' + salt;
+                const v2hash = CryptoJS.SHA512(hash_string).toString(CryptoJS.enc.Hex);
+                var authHeader = 'hmac username="' + key + '", ' + 'algorithm="' + AUTH_TYPE + '", headers="date", signature="' + v2hash + '"'
+                console.log("v2hash", v2hash);
+                console.log("authHeader", authHeader);
+
+            var expressRequestObj = {
+                data: data,
+                date: date,
+                isCheckoutExpress: true,
+                v2Hash: authHeader
+            }
+            console.log(expressRequestObj);
+            bolt.launch(expressRequestObj, {
+                responseHandler: function (get) {
+                    console.log(get.response);
+                },
+                catchException: function (get) {
+                    alert(get.message);
+                }
+            });
+
+
+
+            }
+            $(document).on("click","#pay",function(){
+                var requestObj = {
+                    key: $("#key").val(),
+                    txnid: $("#txnid").val(),
+                    hash: $("#hash").val(),
+                    amount: $("#amount").val(),
+                    firstname: $("#firstname").val(),
+                    email: $("#email").val(),
+                    phone: $("#phone").val(),
+                    productinfo: $("#productinfo").val(),
+                    surl : $("#surl").val(),
+                    furl : $("#furl").val(),
+                    lastname : $("#lastname").val(),
+                    curl : $("#curl").val(),
+                    address1 : $("#address1").val(),
+                    address2 : $("#address2").val(),
+                    city : $("#city").val(),
+                    state : $("#state").val(),
+                    country : $("#country").val(),
+                    zipcode : $("#zipcode").val(),
+                    udf1 : $("#udf1").val(),
+                    udf2 : $("#udf2").val(),
+                    udf3 : $("#udf3").val(),
+                    udf4 : $("#udf4").val(),
+                    udf5 : $("#udf5").val(),
+                    pg : $("#pg").val(),
+                    enforce_paymethod : $("#enforcepaymethod").val(),
+                    expirytime : $("#expirytime").val()
+                }
+                if($("#modeDisabled").val() != "true"){
+                    requestObj.mode = $("#mode").val();
+                }
+                bolt.launch(requestObj,{
+                    responseHandler: function(get){
+                        console.log(get.response);
+                    },
+                    catchException: function(get){
+                        alert(get.message);
+                    }
+                });
+            });
+            $(document).on('click','#generateHash',function () {hash();});
+            $(document).on('click','#generateV2Hash',function () {v2Hash();});
+  		</script>
+</body></html>
